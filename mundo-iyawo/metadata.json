@@ -1,0 +1,6 @@
+{
+  "name": "Mundo Iyawo",
+  "description": "Un portal interactivo para aprender sobre la religion afrocubana de la Santeria, Ifa y Palo Mayombe, incluyendo Orishas, Patakis, Libros, Videos y un Consultor de Inteligencia Artificial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

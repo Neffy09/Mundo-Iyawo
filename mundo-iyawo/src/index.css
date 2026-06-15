@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Overrides for MUNDO IYAWO Premium UX/UI Theme: Netflix, MasterClass, Apple TV+ look */
+  --color-zinc-950: #050505;         /* Obsidian / deep dark space bg */
+  --color-zinc-900: #101010;         /* Pure luxury card bg */
+  --color-zinc-850: #181818;         /* Premium Card Hover */
+  --color-zinc-800: #242424;         /* Sharp tech borders */
+  --color-zinc-700: #333333;         /* Muted borders */
+  --color-zinc-650: #444444;         
+  --color-zinc-600: #666666;         
+  --color-zinc-500: #A0A0A0;         /* Secondary text - soft grey */
+  --color-zinc-400: #C2C2C2;         
+  --color-zinc-300: #E0E0E0;         
+  --color-zinc-200: #F3F3F3;         
+  --color-zinc-100: #FFFFFF;         /* Main text - pure white */
+  --color-zinc-50: #FAFAFA;
+
+  /* Shimmering Gold, Sunlight Bronze and Mystical Purple */
+  --color-amber-950: #151105;
+  --color-amber-900: #291f07;
+  --color-amber-800: #57420b;        
+  --color-amber-700: #a37c15;        
+  --color-amber-600: #be9017;        
+  --color-amber-500: #D4AF37;        /* Gold principal (luxury gold) */
+  --color-amber-400: #E8C97A;        /* Gold claro */
+  --color-amber-300: #f2dfa8;        
+  --color-amber-200: #faf1d4;        
+  --color-amber-100: #fefcf3;        
+
+  /* Mystic Purple & Energetic Accents */
+  --color-purple-500: #6E44FF;       /* Morado místico */
+  --color-emerald-500: #2ECC71;      /* Verde éxito */
+  --color-red-500: #E74C3C;          /* Rojo error */
+}
+
+body {
+  background-color: #050505; /* Black obsidian space background */
+  color: #FFFFFF;            /* Pure white main text */
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbars for a premium editorial look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #6E44FF;       /* Premium mystic purple scroll */
+  border-radius: 999px;
+  border: 2px solid #050505;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;       /* Turns golden on hover */
+}
+
+/* Elegant transition utility classes */
+.custom-transition {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animated high-clarity background glowing effects to draw audience attention */
+.glow-spotlight {
+  background: radial-gradient(40rem circle at var(--x, 50%) var(--y, 50%), rgba(244, 94, 5, 0.08), transparent 70%);
+}
+
